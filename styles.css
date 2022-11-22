@@ -1,0 +1,115 @@
+body {
+  margin: 0;
+}
+
+body * {
+  box-sizing: border-box;
+}
+
+.anchor-gold {
+  color: rgba(227, 184, 115, 1);
+}
+
+.wrapper1 {
+  max-width: 1256px;
+  margin: 0 auto;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 11px;
+  font-weight: 400;
+}
+
+.button {
+  border-radius: 2px;
+  background-color: rgba(227, 184, 115, 1);
+  box-shadow: 0 5px 15px rgba(227, 184, 115, 0.2);
+  color: white;
+  font-style: italic;
+  border: none;
+  padding: 13px 33px;
+  font-size: 11px;
+}
+
+.header {
+  background-color: black;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 83px;
+}
+
+.header__logo {
+  color: rgba(227, 184, 115, 1);
+  text-transform: uppercase;
+}
+
+.header__navigation {
+  display: flex;
+  list-style: none;
+}
+
+.header__navigation_list-item {
+  margin-right: 47px;
+  color: white;
+
+}
+
+.header__navigation_list-item a {
+  text-decoration: none;
+}
+
+.header__phone {
+  color: rgba(227, 184, 115, 1);
+  margin-left: 97px;
+}
+
+.section1 {
+  background-image: url("./images/image-section1.jpg");
+  background-size: cover;
+  height: 707px;
+  padding-top: 194px;
+  position: relative;
+  z-index: -1;
+}
+
+.section1_overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: -1;
+}
+
+.section1 h1 {
+  font-family: 'Yeseva One', sans-serif;
+  font-size: 40px;
+  text-transform: uppercase;
+  margin: 0 728px 0 134px;
+  color: white;
+  font-weight: 400;
+}
+
+.section1__title_gold {
+  color: rgba(227, 184, 115, 1);
+}
+
+.section1__description-text {
+  font-size: 22px;
+  color: white;
+  margin: 19px 790px 0 134px;
+}
+
+.section1__calc-button {
+  padding: 20px 42px;
+  margin: 60px 20px 0 134px;
+}
+
+.section1__confirm-button {
+  padding: 20px 23px;
+  background-color: transparent;
+  border: 1px solid white;
+}

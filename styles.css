@@ -48,6 +48,7 @@ body * {
 .header__navigation {
   display: flex;
   list-style: none;
+  margin-left: 100px;
 }
 
 .header__navigation_list-item {
@@ -62,7 +63,8 @@ body * {
 
 .header__phone {
   color: rgba(227, 184, 115, 1);
-  margin-left: 97px;
+  margin-left: 47px;
+  margin-right: 45px;
 }
 
 .section1 {
@@ -88,9 +90,11 @@ body * {
   font-family: 'Yeseva One', sans-serif;
   font-size: 40px;
   text-transform: uppercase;
-  margin: 0 728px 0 134px;
+  padding: 0 728px 0 134px;
   color: white;
   font-weight: 400;
+  margin-bottom: 30px;
+  margin-top: 0;
 }
 
 .section1__title_gold {
@@ -100,12 +104,12 @@ body * {
 .section1__description-text {
   font-size: 22px;
   color: white;
-  margin: 19px 790px 0 134px;
+  padding: 0 690px 0 40px;
 }
 
 .section1__calc-button {
   padding: 20px 42px;
-  margin: 60px 20px 0 134px;
+  margin: 41px 20px 0 134px;
 }
 
 .section1__confirm-button {

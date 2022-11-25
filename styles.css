@@ -16,6 +16,7 @@ body * {
   font-family: "Nunito Sans", sans-serif;
   font-size: 11px;
   font-weight: 400;
+  color: white;
 }
 
 .button {
@@ -116,4 +117,75 @@ body * {
   padding: 20px 23px;
   background-color: transparent;
   border: 1px solid white;
+}
+
+.section2 {
+  display: flex;
+  background-color: black;
+  height: 1074px;
+}
+
+.section2__description {
+  margin: 176px 50px 417px 135px;
+}
+
+.section2__list-container {
+  display: flex;
+  gap: 61px;
+  text-align: left;
+  color: rgba(255, 255, 255, 0.3);
+  margin: 0 0 53px 0;
+  list-style: none;
+  padding: 0;
+}
+
+.section2__list-container li {
+  font-family: "Yeseva One", sans-serif;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.apt-pic-container {
+  display: flex;
+  flex-direction: column;
+  margin: 107px 135px 416px 0;
+}
+
+.section2__title {
+  color: rgba(227, 184, 115, 1);
+  font-family: "Yeseva One", sans-serif;
+  font-size: 27px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.section2__paragraph {
+  font-size: 14px;
+}
+
+.arrow-container {
+  display: flex;
+  /*justify-content: start;*/
+  align-items: center;
+}
+
+.arrow-left {
+  width: 13px;
+  height: 6px;
+}
+
+.circle {
+  display: block;
+  width: 9.57px;
+  height: 9.57px;
+  border-radius: 30px;
+}
+
+.circle-white {
+  background-color: rgba(255, 255, 255, 1);
+}
+
+.circle-grey {
+  background-color: rgba(255, 255, 255, 0.3);
+
 }

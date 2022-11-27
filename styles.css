@@ -19,6 +19,15 @@ body * {
   color: white;
 }
 
+.wrapper2 {
+  max-width: 1256px;
+  margin: 0 auto;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: black;
+}
+
 .button {
   border-radius: 2px;
   background-color: rgba(227, 184, 115, 1);
@@ -129,6 +138,44 @@ body * {
   margin: 176px 50px 417px 135px;
 }
 
+.section2__title {
+  color: rgba(227, 184, 115, 1);
+  font-family: "Yeseva One", sans-serif;
+  font-size: 27px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.section2__paragraph {
+  font-size: 14px;
+  line-height: 27px;
+}
+
+.section2__description-table-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 42px 10px 40px 0;
+}
+
+.section2__description-table-container-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 190px;
+  height: 110px;
+}
+
+.description-title {
+  font-family: 'Yeseva One', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  color: rgba(227, 184, 115, 1);
+  margin: 0;
+}
+
+.description-paragraph {
+  font-size: 13px;
+}
+
 .section2__list-container {
   display: flex;
   gap: 61px;
@@ -148,19 +195,7 @@ body * {
 .apt-pic-container {
   display: flex;
   flex-direction: column;
-  margin: 107px 135px 416px 0;
-}
-
-.section2__title {
-  color: rgba(227, 184, 115, 1);
-  font-family: "Yeseva One", sans-serif;
-  font-size: 27px;
-  font-weight: 400;
-  text-transform: uppercase;
-}
-
-.section2__paragraph {
-  font-size: 14px;
+  margin: 107px 125px 416px 0;
 }
 
 .arrow-container {
@@ -169,9 +204,35 @@ body * {
   align-items: center;
 }
 
+.line {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.left-line {
+  margin-right: 29px;
+}
+
+.left-line::before {
+  content: url("images/left-arrow-spike.svg");
+  height: 13px;
+  position: absolute;
+}
+
+.right-line {
+  margin-left: 11px;
+}
+
+.right-line::after {
+  content: url("images/arrow-right.svg");
+  height: 13px;
+  position: absolute;
+  right: 0;
+}
+
 .arrow-left {
-  width: 13px;
-  height: 6px;
+  rotate: -90deg;
 }
 
 .circle {
@@ -179,6 +240,7 @@ body * {
   width: 9.57px;
   height: 9.57px;
   border-radius: 30px;
+  margin-right: 18px;
 }
 
 .circle-white {
@@ -187,5 +249,174 @@ body * {
 
 .circle-grey {
   background-color: rgba(255, 255, 255, 0.3);
-
 }
+
+.section3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: -350px;
+}
+
+.section3 h3 {
+  font-family: 'Yeseva One', sans-serif;
+  font-size: 20px;
+  color: white;
+}
+
+.camera-symbol {
+  position: relative;
+}
+
+.camera-symbol::before {
+  content: url("images/golden-line.svg");
+  position: absolute;
+  left: -38px;
+  top: 3px;
+}
+
+.camera-symbol::after {
+  content: url("images/golden-line.svg");
+  position: absolute;
+  right: -38px;
+  top: 3px;
+}
+
+.video {
+  position: relative;
+  background-image: url("images/video.png");
+  width: 817px;
+  height: 434px;
+  margin-top: 31px;
+  margin-bottom: 63px;
+}
+
+.video::before {
+  content: ' ';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.video-play-circle-symbol {
+  border-radius: 50%;
+  width: 85px;
+  height: 85px;
+  background-color: rgba(227, 184, 115, 1);
+  position: absolute;
+  bottom: 40%;
+  left: 45%;
+}
+
+.video-play-circle-symbol img {
+  position: absolute;
+  left: 35px;
+  top: 30px;
+}
+
+.input-button-container {
+  display: flex;
+  gap: 49px;
+  margin-top: 93px;
+  margin-bottom: 39px;
+  align-items: end;
+}
+
+.input-label-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+#name, #phone {
+  border: none;
+  border-bottom: 1px solid rgba(54, 54, 54, 0.3);
+  line-height: 23px;
+  width: 231px;
+}
+
+#name::placeholder, #phone::placeholder {
+  color: rgba(54, 54, 54, 1);
+}
+
+.input-label {
+  font-size: 13px;
+  color: rgba(54, 54, 54, 0.5)
+}
+
+.checkbox-container {
+  margin-bottom: 148px;
+}
+
+#checkbox {
+  accent-color: rgb(227, 184, 115);
+  width: 18px;
+  height: 18px;
+}
+
+.section4 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.instruments-symbol {
+  position: relative;
+}
+
+.instruments-symbol::before {
+  content: url("images/golden-line.svg");
+  position: absolute;
+  left: -38px;
+  top: 3px;
+}
+
+.instruments-symbol::after {
+  content: url("images/golden-line.svg");
+  position: absolute;
+  right: -38px;
+  top: 3px;
+}
+
+.repair-example-pics {
+  display: flex;
+  gap: 30px;
+  margin-top: 31px;
+}
+
+.section4__repair-service-listing-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.repair-service-listing {
+  width: 330px;
+  height: 286px;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03);
+  margin-top: -127px;
+  background-color: white;
+}
+
+.description-list {
+  font-size: 13px;
+  color: rgb(149, 149, 149);
+  line-height: 27px;
+}
+
+.price {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(227, 184, 115, 1);
+  width: 228px;
+  height: 54px;
+  font-family: 'Yeseva One', sans-serif;
+  font-size: 18px;
+  color: white;
+  position: absolute;
+  left: 32px;
+  top: 554px;
+}
+

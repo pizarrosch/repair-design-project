@@ -34,6 +34,7 @@
   </header>
   <main>
     <section class="section1">
+      <div class="section1__content-wrapper">
         <h1>Turnkey Repair in the city of <span class="section1__title_gold">Rostov-on-Don</span></h1>
         <p class="wrapper1 section1__description-text">
           Get ready-made turnkey repairs on time <br> with work time saving up to 45 days and 20% from
@@ -41,48 +42,51 @@
         </p>
         <button class="button section1__calc-button">CALCULATE THE COST</button>
         <button class="button section1__confirm-button">SUBMIT YOUR APPLICATION</button>
+      </div>
       <div class="section1_overlay"></div>
     </section>
     <section class="section2" id="section2">
-      <div class="wrapper1 section2__description">
-        <h2 class="section2__title">Completed <br> projects</h2>
-        <p class="section2__paragraph">Only a small part of the work performed by our company is presented <br> on the site.
-           For 14 years on in the construction <br>
-           market we have made happy more than 1000 families
-        </p>
-        <div class="section2__description-table-container">
-          <div class="section2__description-table-container-wrapper">
-            <h3 class="description-title">CITY:</h3>
-            <p class="description-paragraph">Rostov-on-Don <br> LCD admiral</p>
+      <div class="section2__content-wrapper">
+        <div class="wrapper1 section2__description">
+          <h2 class="section2__title">Completed <br> projects</h2>
+          <p class="section2__paragraph">Only a small part of the work performed by our company is presented <br> on the site.
+            For 14 years on in the construction <br>
+            market we have made happy more than 1000 families
+          </p>
+          <div class="section2__description-table-container">
+            <div class="section2__description-table-container-wrapper">
+              <h3 class="description-title">CITY:</h3>
+              <p class="description-paragraph">Rostov-on-Don <br> LCD admiral</p>
+            </div>
+            <div class="section2__description-table-container-wrapper">
+              <h3 class="description-title">APARTMENT AREA:</h3>
+              <p class="description-paragraph">81m²</p>
+            </div>
+            <div class="section2__description-table-container-wrapper">
+              <h3 class="description-title">REPAIR TIME:</h3>
+              <p class="description-paragraph">3.5 months</p>
+            </div>
+            <div class="section2__description-table-container-wrapper">
+              <h3 class="description-title">REPAIR COST:</h3>
+              <p class="description-paragraph">Upon request</p>
+            </div>
           </div>
-          <div class="section2__description-table-container-wrapper">
-            <h3 class="description-title">APARTMENT AREA:</h3>
-            <p class="description-paragraph">81m²</p>
-          </div>
-          <div class="section2__description-table-container-wrapper">
-            <h3 class="description-title">REPAIR TIME:</h3>
-            <p class="description-paragraph">3.5 months</p>
-          </div>
-          <div class="section2__description-table-container-wrapper">
-            <h3 class="description-title">REPAIR COST:</h3>
-            <p class="description-paragraph">Upon request</p>
-          </div>
-        </div>
-        <span class="arrow-container">
+          <span class="arrow-container">
           <span class="line left-line"><img src="images/line.svg" ></span>
           <span class="circle circle-white"></span>
           <span class="circle circle-grey"></span>
           <span class="circle circle-grey"></span>
           <span class="line right-line"><img src="images/line.svg"></span>
         </span>
-      </div>
-      <div class="apt-pic-container">
-        <ul class="section2__list-container wrapper1">
-          <li class="anchor-gold">Rostov-on-Don, Admiral <hr style="border-color: rgba(227, 184, 115, 1);"></li>
-          <li>Sochi Thieves</li>
-          <li>Rostov-on-Don Patriotic</li>
-        </ul>
-        <img src="images/admiral-apt.png" alt="apartment-pic">
+        </div>
+        <div class="apt-pic-container">
+          <ul class="section2__list-container wrapper1">
+            <li class="anchor-gold" style="cursor: pointer">Rostov-on-Don, Admiral <hr style="border-color: rgba(227, 184, 115, 1);"></li>
+            <li style="cursor: pointer">Sochi Thieves</li>
+            <li style="cursor: pointer">Rostov-on-Don Patriotic</li>
+          </ul>
+          <img src="images/admiral-apt.png" alt="apartment-pic">
+        </div>
       </div>
     </section>
     <section class="wrapper2 section3">
@@ -217,12 +221,12 @@
             font-size: 13px;
             margin: 39px 49px 27px 244px"
         >CALL THE MEASURER</button>
+        <div class="money-save-promotion-container">
+          <div class="piglet-container"><img src="images/Piglet.svg"></div>
+          <p style="font-family: 'Nunito Sans', sans-serif; font-size: 18px; color: rgba(227, 184, 115, 1); margin-left: 25px">Help save 10 - 20% of the <br> cost of materials</p>
+        </div>
       </div>
     </section>
-    <div style="display: flex; align-items: center; margin: 38px 0 0 867px">
-      <div class="piglet-container"><img src="images/Piglet.svg"></div>
-      <p style="font-family: 'Nunito Sans', sans-serif; font-size: 18px; color: rgba(227, 184, 115, 1); margin-left: 25px">Help save 10 - 20% of the <br> cost of materials</p>
-    </div>
     <section class="section6">
       <div class="wrapper2">
         <h1
@@ -336,10 +340,30 @@
           Rostov-on-Don, Nansen St., 239 Shopping Center <br> Decorum Tel +7 (928) 768 32 29
         </p>
         <div class="mailbox-and-insta-icon-container">
-          <div style="border-radius: 50%; width: 28px; height: 28px; background-color: rgba(227, 184, 115, 1); display: flex; align-items: center; justify-content: center">
-            <img src="images/mailbox-icon.svg" alt="mailbox">
+          <div
+            style="
+              border-radius: 50%;
+              width: 28px;
+              height: 28px;
+              background-color: rgba(227, 184, 115, 1);
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              cursor: pointer;"
+          >
+            <img src="images/mailbox-icon.svg" alt="mailbox" style="cursor: pointer">
           </div>
-          <div style="border-radius: 50%; width: 28px; height: 28px; background-color: rgba(227, 184, 115, 1); display: flex; align-items: center; justify-content: center">
+          <div
+            style="
+              border-radius: 50%;
+              width: 28px;
+              height: 28px;
+              background-color: rgba(227, 184, 115, 1);
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              cursor: pointer"
+          >
             <img src="images/insta-icon.svg" alt="instagram">
           </div>
         </div>
@@ -377,12 +401,12 @@
       </div>
       <nav>
         <ul class="header__navigation">
-          <li class="header__navigation_list-item">HOME</li>
-          <li class="header__navigation_list-item">PROJECTS</li>
-          <li class="header__navigation_list-item">MEASUREMENT</li>
-          <li class="header__navigation_list-item">TEAM</li>
-          <li class="header__navigation_list-item">REVIEWS</li>
-          <li class="header__navigation_list-item">CONTACTS</li>
+          <li class="header__navigation_list-item"><a href="#" class="anchor" style="color: rgba(227, 184, 115, 1);">HOME</a></li>
+          <li class="header__navigation_list-item"><a class="anchor" href="#section2">PROJECTS</a></li>
+          <li class="header__navigation_list-item"><a class="anchor" href="#section5">MEASUREMENT</a></li>
+          <li class="header__navigation_list-item"><a class="anchor" href="#section5">TEAM</a></li>
+          <li class="header__navigation_list-item"><a class="anchor" href="#reviews">REVIEWS</a></li>
+          <li class="header__navigation_list-item"><a class="anchor" href="#contacts">CONTACTS</a></li>
         </ul>
       </nav>
       <span class="header__phone"><a href="#" class="anchor-gold">+7 (928) 768-32-39</a></span>

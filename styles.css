@@ -104,7 +104,7 @@ body * {
   height: 707px;
   padding-top: 194px;
   position: relative;
-  z-index: -1;
+  z-index: 0;
 }
 
 .section1_overlay {
@@ -117,11 +117,15 @@ body * {
   z-index: -1;
 }
 
+.section1__content-wrapper {
+  width: 515px;
+  margin-left: 134px;
+}
+
 .section1 h1 {
   font-family: 'Yeseva One', sans-serif;
   font-size: 40px;
   text-transform: uppercase;
-  padding: 0 728px 0 134px;
   color: white;
   font-weight: 400;
   margin-bottom: 30px;
@@ -135,30 +139,33 @@ body * {
 .section1__description-text {
   font-size: 22px;
   color: white;
-  padding: 0 690px 0 40px;
 }
 
 .section1__calc-button {
   padding: 20px 42px;
-  margin: 41px 20px 0 134px;
-  cursor: pointer;
+  margin: 41px 20px 0 0;
 }
 
 .section1__confirm-button {
   padding: 20px 23px;
   background-color: transparent;
   border: 1px solid white;
-  cursor: pointer;
 }
 
 .section2 {
   display: flex;
   background-color: black;
   height: 1074px;
+  justify-content: center;
+}
+
+.section2__content-wrapper {
+  width: 1171px;
+  display: flex;
 }
 
 .section2__description {
-  margin: 176px 50px 417px 135px;
+  margin: 176px 50px 417px 0;
 }
 
 .section2__title {
@@ -172,6 +179,7 @@ body * {
 .section2__paragraph {
   font-size: 14px;
   line-height: 27px;
+  width: 442px;
 }
 
 .section2__description-table-container {
@@ -231,20 +239,24 @@ body * {
   display: flex;
   align-items: center;
   position: relative;
+  cursor: pointer;
 }
 
 .left-line {
   margin-right: 29px;
+  cursor: pointer;
 }
 
 .left-line::before {
   content: url("images/left-arrow-spike.svg");
   height: 13px;
   position: absolute;
+  cursor: pointer;
 }
 
 .right-line {
   margin-left: 11px;
+  cursor: pointer;
 }
 
 .right-line::after {
@@ -252,6 +264,7 @@ body * {
   height: 13px;
   position: absolute;
   right: 0;
+  cursor: pointer;
 }
 
 .arrow-left {
@@ -449,11 +462,13 @@ body * {
   position: absolute;
   left: 32px;
   top: 554px;
+  cursor: pointer;
 }
 
 .section5 {
   display: flex;
   margin: 174px auto 0 auto;
+  position: relative;
 }
 
 .section5__service-listing-container {
@@ -465,6 +480,7 @@ body * {
   height: 645px;
   background-repeat: no-repeat;
   gap: 115px;
+  margin-left: -90px;
 }
 
 .list-text-wrapper {
@@ -500,6 +516,7 @@ body * {
   flex-direction: column;
   background-color: black;
   margin-top: 120px;
+  margin-bottom: 100px;
 }
 
 .section5__input-label, .section7__input-label {
@@ -526,17 +543,21 @@ body * {
   font-family: 'Nunito Sans', sans-serif;
 }
 
-.piglet-container {
-  border-radius: 50%;
-  width: 72px;
-  height: 72px;
-  background-color: rgba(227, 184, 115, 1);
+.money-save-promotion-container {
+  display: flex;
+  align-items: center;
+  margin: 38px 0 0 25px;
 }
 
 .piglet-container {
   display: flex;
   justify-content: center;
   align-items: center;
+  border-radius: 50%;
+  width: 72px;
+  height: 72px;
+  background-color: rgba(227, 184, 115, 1);
+  cursor: pointer;
 }
 
 .section6 {
@@ -544,7 +565,7 @@ body * {
   width: 1440px;
   height: 865px;
   position: relative;
-  z-index: -1;
+  z-index: 0;
   margin: 240px auto 0 auto;
 }
 
@@ -563,6 +584,10 @@ body * {
   font-size: 20px;
   color: white;
   list-style: none;
+}
+
+.room-style-list li {
+  cursor: pointer;
 }
 
 .room-style-list li:first-child {
@@ -686,7 +711,7 @@ body * {
   width: 1440px;
   height: 955px;
   position: relative;
-  z-index: -1;
+  z-index: 0;
 }
 
 .section7__overlay {
@@ -722,7 +747,6 @@ body * {
   background-color: rgba(24, 24, 24, 1);
   position: relative;
   margin: -1165px auto 0 auto;
-  z-index: 0;
 }
 
 #the_phone, #the_name, #question {
@@ -761,4 +785,37 @@ body * {
 
 .footer-content {
   height: 133px;
+}
+
+@media screen and (min-width: 1600px) {
+  .section1__content-wrapper {
+    margin-left: 294px;
+  }
+}
+
+@media screen and (min-width: 1800px) {
+  .section1 {
+    background-position: center;
+  }
+  .section1__content-wrapper {
+    margin-left: 454px;
+  }
+}
+
+@media screen and (min-width: 2000px) {
+  .section1 {
+    background-position: center;
+  }
+  .section1__content-wrapper {
+    margin-left: 500px;
+  }
+}
+
+@media screen and (min-width: 2560px) {
+  .section1 {
+    background-position: center;
+  }
+  .section1__content-wrapper {
+    margin-left: 720px;
+  }
 }

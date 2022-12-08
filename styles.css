@@ -95,7 +95,7 @@ body * {
 .header__phone {
   color: rgba(227, 184, 115, 1);
   margin-left: 47px;
-  margin-right: 45px;
+  margin-right: 18px;
 }
 
 .section1 {
@@ -141,6 +141,10 @@ body * {
   color: white;
 }
 
+.section1__description-text-mobile {
+  display: none;
+}
+
 .section1__calc-button {
   padding: 20px 42px;
   margin: 41px 20px 0 0;
@@ -150,6 +154,10 @@ body * {
   padding: 20px 23px;
   background-color: transparent;
   border: 1px solid white;
+}
+
+.section1__confirm-button-for-mobile {
+  display: none;
 }
 
 .section2 {
@@ -180,6 +188,10 @@ body * {
   font-size: 14px;
   line-height: 27px;
   width: 442px;
+}
+
+.section2__paragraph-mobile {
+  display: none;
 }
 
 .section2__description-table-container {
@@ -227,6 +239,15 @@ body * {
   display: flex;
   flex-direction: column;
   margin: 107px 125px 416px 0;
+}
+
+.completed-project-room-for-mobile {
+  display: none;
+}
+
+.slider-circle-for-mobile-left,
+.slider-circle-for-mobile-right {
+  display: none;
 }
 
 .arrow-container {
@@ -298,6 +319,17 @@ body * {
   font-family: 'Yeseva One', sans-serif;
   font-size: 20px;
   color: white;
+}
+
+.section3__paragraph {
+  text-align: center;
+  font-size: 18px;
+  line-height: 37px;
+  margin-top: 35px;
+}
+
+.section3__paragraph-for-mobile {
+  display: none;
 }
 
 .camera-symbol {
@@ -388,6 +420,10 @@ body * {
   margin-bottom: 148px;
 }
 
+.checkbox-input-label {
+  color: rgba(24, 24, 24, 1)
+}
+
 #checkbox, #checkbox2, #section7__checkbox {
   accent-color: rgb(227, 184, 115);
   width: 18px;
@@ -402,6 +438,12 @@ body * {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.section4__main-title {
+  font-family: 'Yeseva One', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
 }
 
 .instruments-symbol {
@@ -424,8 +466,13 @@ body * {
 
 .repair-example-pics {
   display: flex;
+  align-items: center;
   gap: 30px;
   margin-top: 31px;
+}
+
+.red-sofa-image-mobile {
+  display: none;
 }
 
 .section4__repair-service-listing-container {
@@ -441,6 +488,13 @@ body * {
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03);
   margin-top: -127px;
   background-color: white;
+}
+
+.repair-service-listing h3 {
+  font-family: 'Yeseva One', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  padding-left: 34px;
 }
 
 .description-list {
@@ -569,6 +623,20 @@ body * {
   margin: 240px auto 0 auto;
 }
 
+.section6 h1 {
+  font-family: 'Yeseva One', sans-serif;
+  font-size: 27px; color: rgba(227, 184, 115, 1);
+  font-weight: 400;
+  padding: 137px 77px 47px 5px;
+  margin: 0
+}
+
+
+.section6__slider-circle-for-mobile-left,
+.section6__slider-circle-for-mobile-right {
+  display: none;
+}
+
 .big-living-room-pic-overlay {
   content: ' ';
   position: absolute;
@@ -623,7 +691,11 @@ body * {
   top: 200px;
 }
 
-.section7 {
+.room-with-clock {
+  display: none;
+}
+
+.section7, .section8 {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -730,6 +802,10 @@ body * {
   gap: 15px;
 }
 
+.mailbox-and-insta-icon-container-for-mobile {
+  display: none;
+}
+
 .map {
   background-image: url("images/map.png");
   width: 925px;
@@ -747,6 +823,29 @@ body * {
   background-color: rgba(24, 24, 24, 1);
   position: relative;
   margin: -1165px auto 0 auto;
+}
+
+.section7__contact-form-container h3 {
+  font-family: 'Yeseva One', sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  color: white;
+  margin-top: 34px;
+  margin-bottom: 0;
+}
+
+.section8__paragraph {
+  font-family: 'Yeseva One', sans-serif;
+  font-size: 20px;
+  line-height: 27px;
+  color: rgba(227, 184, 115, 1);
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 275px;
+}
+
+.section8__paragraph-for-mobile {
+  display: none;
 }
 
 #the_phone, #the_name, #question {
@@ -787,6 +886,445 @@ body * {
   height: 133px;
 }
 
+@media screen and (max-width: 400px) {
+  .wrapper1 {
+    max-width: 375px;
+  }
+
+  .wrapper2 {
+    max-width: 375px;
+  }
+
+  .header__navigation,
+  .header-content button,
+  .section1__description-text,
+  .section1__confirm-button,
+  .arrow-container,
+  .section2__list-container,
+  .apt-pic-container img,
+  .section3__paragraph,
+  .section5,
+  .room-style-list,
+  .big-living-room-pic-overlay,
+  .cupboard-with-clock,
+  .tv-set,
+  .couch,
+  .couch-table,
+  .section7,
+  .city-background,
+  .section7__overlay,
+  .mailbox-and-insta-icon-container {
+    display: none;
+  }
+
+  .header {
+    display: flex;
+    height: 57px;
+    align-items: center;
+  }
+
+  .header__phone {
+    margin-right: 0;
+    margin-left: 86px;
+  }
+
+  .anchor-gold {
+    color: white;
+    text-decoration: none;
+  }
+
+  .section1 {
+    background-image: url("images/living-room-for-mobile.png");
+    width: 375px;
+    height: 476px;
+  }
+
+  .section1__content-wrapper {
+    width: 340px;
+    margin-left: 18px;
+  }
+
+  .section1 h1 {
+    font-size: 23px;
+    margin-top: -107px;
+    margin-bottom: 17px;
+  }
+
+  .section1__description-text-mobile {
+    display: block;
+    font-size: 14px;
+    width: 340px;
+    height: 94px;
+  }
+
+  .section1__calc-button {
+    width: 340px;
+    margin-bottom: 26px;
+  }
+
+  .section1__confirm-button-for-mobile {
+    width: 340px;
+    display: block;
+    padding: 20px 23px;
+    background-color: transparent;
+    border: 1px solid white;
+  }
+
+  .section2__content-wrapper {
+    width: 375px;
+    flex-direction: column;
+    text-align: center;
+    position: relative;
+    background-color: rgba(19, 19, 19, 1);
+  }
+
+  .section2__description {
+    margin: 36px auto 0 auto;
+  }
+
+  .section2__title {
+    font-size: 22px;
+    margin-bottom: 30px;
+  }
+
+  .section2__paragraph {
+    display: none;
+  }
+
+  .section2__paragraph-mobile {
+    display: block;
+    font-size: 11px;
+    line-height: 17px;
+    width: 311px;
+    margin: 0 auto;
+  }
+
+  .section2__description-table-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 340px;
+    text-align: start;
+    margin-left: 10px;
+  }
+
+  .description-title {
+    font-size: 14px;
+  }
+
+  .description-paragraph {
+    font-size: 11px;
+  }
+
+  .completed-project-room-for-mobile {
+    display: block;
+    margin: 60px auto 0 auto;
+  }
+
+  .slider-circle-for-mobile-left {
+    display: block;
+    position: absolute;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background-color: rgba(227, 184, 115, 1);
+    bottom: 700px;
+    left: 32px;
+  }
+
+  .slider-circle-for-mobile-right {
+    display: block;
+    position: absolute;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background-color: rgba(227, 184, 115, 1);
+    bottom: 700px;
+    right: 32px;
+  }
+
+  .slider-circle-for-mobile-left::before {
+    content: url("images/smaller-arrow-spike-left.svg");
+    position: absolute;
+    top: 11px;
+    right: 15px;
+  }
+
+  .slider-circle-for-mobile-right::after {
+    content: url("images/smaller-arrow-spike-right.svg");
+    position: absolute;
+    top: 11px;
+    left: 15px;
+  }
+
+  .video {
+    background-image: url("images/video-for-mobile.png");
+    background-repeat: no-repeat;
+    width: 340px;
+    height: 207px;
+    margin-bottom: 28px;
+  }
+
+  .video-play-circle-symbol {
+    width: 37px;
+    height: 37px;
+  }
+
+  .video-play-circle-symbol img {
+    width: 12px;
+    height: 12px;
+    left: 13px;
+    top: 13px;
+  }
+
+  .section3 {
+    background-color: rgba(19, 19, 19, 1);
+  }
+
+  .section3 h3 {
+    font-size: 22px;
+    z-index: 0;
+  }
+
+  .section3__paragraph-for-mobile {
+    display: block;
+    font-size: 11px;
+    color: white;
+    text-align: center;
+    line-height: 19px;
+    margin-top: 21px;
+  }
+
+  .input-button-container {
+    flex-direction: column;
+    margin-top: 61px;
+  }
+
+  .input-label {
+    color: rgba(255, 255, 255, 0.5);
+  }
+
+  #name, #phone {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    background-color: rgba(19, 19, 19, 1);
+    width: 340px;
+  }
+
+  #name::placeholder, #phone::placeholder {
+    color: white;
+    line-height: 19px;
+  }
+
+  .submit-button {
+    position: absolute;
+    width: 340px;
+    top: 2085px;
+    left: 17px;
+  }
+
+  .checkbox-container {
+    margin-bottom: 88px;
+    align-self: start;
+    margin-left: 18px;
+  }
+
+  .checkbox-input-label {
+    color: white;
+  }
+
+  .section4__main-title {
+    font-size: 22px;
+    margin-top: 83px;
+  }
+
+  .repair-example-pics {
+    flex-direction: column;
+  }
+
+  .repair-example-pics img {
+    width: 340px;
+    height: 365px;
+  }
+
+  .repair-example-2 {
+    display: none;
+  }
+
+  .red-sofa-image-mobile {
+    display: block;
+  }
+
+  .section4__repair-service-listing-container {
+    margin-bottom: 59px;
+  }
+
+  .repair-service-listing {
+    width: 270px;
+    height: 241px;
+    align-self: start;
+    margin-top: -140px;
+  }
+
+  .repair-service-listing h3 {
+    font-size: 15px;
+  }
+
+  .description-list {
+    line-height: 22px;
+  }
+
+  .price {
+    width: 190px;
+    height: 40px;
+    font-size: 15px;
+    top: 445px;
+    left: 0;
+  }
+
+  .section6,
+  .section7_map {
+    background-image: none;
+  }
+
+  .section6 {
+    width: 375px;
+    flex-direction: column;
+    margin-top: 10px;
+    align-items: center;
+    position: relative;
+    z-index: 0;
+  }
+
+  .section6 h1 {
+    padding: 0;
+    font-size: 22px;
+    text-align: center;
+    line-height: 30px;
+  }
+
+  .room-with-clock {
+    display: block;
+    position: absolute;
+    top: -755px;
+    left: 17px;
+    margin: 0 auto;
+    z-index: 0;
+  }
+
+  .section6__slider-circle-for-mobile-left {
+    display: block;
+    position: absolute;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background-color: rgba(227, 184, 115, 1);
+    top: -652px;
+    left: 32px;
+  }
+
+  .section6__slider-circle-for-mobile-right {
+    display: block;
+    position: absolute;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background-color: rgba(227, 184, 115, 1);
+    top: -652px;
+    right: 32px;
+  }
+
+  .section6__slider-circle-for-mobile-left::before {
+    content: url("images/smaller-arrow-spike-left.svg");
+    position: absolute;
+    top: 11px;
+    right: 15px;
+  }
+
+  .section6__slider-circle-for-mobile-right::after {
+    content: url("images/smaller-arrow-spike-right.svg");
+    position: absolute;
+    top: 11px;
+    left: 15px;
+  }
+
+  .section7__contact-form-container {
+    position: absolute;
+    width: 375px;
+    margin: 0;
+    flex-direction: column;
+    align-items: center;
+    top: -635px;
+    z-index: -1;
+    height: auto;
+  }
+
+  .section7__contact-form-container h3 {
+    margin-top: 173px;
+  }
+
+  .section7__name-and-phone-input-wrapper {
+    flex-direction: column;
+  }
+
+  #the_phone, #the_name, #question {
+    width: 340px;
+  }
+
+  .questions-container {
+    width: 340px;
+  }
+
+  .map {
+    width: 340px;
+    height: 255px;
+    margin: 0 auto;
+    background-image: url("images/map-for-mobile.png");
+  }
+
+  .section7__submit-button {
+    position: absolute;
+    top:610px;
+  }
+
+  .section7_map {
+    background-color: rgba(19, 19, 19, 1);
+    max-width: 375px;
+    height: auto;
+    padding-top: 86px;
+  }
+
+  .section8 {
+    display: block;
+    position: relative;
+    margin-top: 0;
+  }
+
+  .section8__paragraph {
+    display: none;
+  }
+
+  .section8__paragraph-for-mobile {
+    display: block;
+    font-family: 'Yeseva One', sans-serif;
+    font-size: 20px;
+    line-height: 27px;
+    color: rgba(227, 184, 115, 1);
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 42px;
+  }
+
+  .mailbox-and-insta-icon-container-for-mobile {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    padding-bottom: 49px;
+  }
+
+  .footer {
+    display: none;
+  }
+}
+
 @media screen and (min-width: 1600px) {
   .section1__content-wrapper {
     margin-left: 294px;
@@ -819,3 +1357,4 @@ body * {
     margin-left: 720px;
   }
 }
+
